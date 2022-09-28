@@ -7,15 +7,15 @@ void dzlab4()
 {
 	setlocale(LC_ALL, "rus");
 	int  a, b, c, d;
-	printf("Введите кол-во денег:\n");
+	printf("Р’РІРµРґРёС‚Рµ РєРѕР»-РІРѕ РґРµРЅРµРі:\n");
 	scanf("%d", &d);
-	printf("Введите цену перчаток:\n");
+	printf("Р’РІРµРґРёС‚Рµ С†РµРЅСѓ РїРµСЂС‡Р°С‚РѕРє:\n");
 	scanf("%d", &a);
-	printf("Введите цену портфеля:\n");
+	printf("Р’РІРµРґРёС‚Рµ С†РµРЅСѓ РїРѕСЂС‚С„РµР»СЏ:\n");
 	scanf("%d", &b);
-	printf("Введите цену галстука:\n");
+	printf("Р’РІРµРґРёС‚Рµ С†РµРЅСѓ РіР°Р»СЃС‚СѓРєР°:\n");
 	scanf("%d", &c);
-	printf("\nВаша сдача: %d", d - (a + b + c));
+	printf("\nР’Р°С€Р° СЃРґР°С‡Р°: %d", d - (a + b + c));
 }
 
 void practlab523()
@@ -23,14 +23,14 @@ void practlab523()
 	setlocale(LC_ALL, "rus");
 	float x, y, a, b;
 
-	printf("Введите X: \n");
+	printf("Р’РІРµРґРёС‚Рµ X: \n");
 	scanf("%f", &x);
 	a = pow((k + x), 3);
 	b = log10(fabs(k * x));
 	y = pow(b, 2) + sqrt(fabs(a));
 	printf(" a = %f,\n b = %f,\n y = %f\n",a, b, y);
 	
-	printf(" условие выполнено (1 - да, 0 - нет): %d",((int)a%3) && (((int)a%2 && (int)b%2) != 1) && ((int)b % 3) && ((int)y % 3));
+	printf(" СѓСЃР»РѕРІРёРµ РІС‹РїРѕР»РЅРµРЅРѕ (1 - РґР°, 0 - РЅРµС‚): %d",((int)a%3) && (((int)a%2 && (int)b%2) != 1) && ((int)b % 3) && ((int)y % 3));
 
 }
 
@@ -38,9 +38,7 @@ void main()
 {
 	setlocale(LC_ALL, "rus");
 	float x, y;
-	printf("Введите X и Y: \n");
+	printf("Р’РІРµРґРёС‚Рµ X Рё Y: \n");
 	scanf("%f", &x);
 	scanf("%f", &y);
 	printf("F(%f,%f) = %f", x, y, (2.33*log(sqrt(1 + pow(cos(x), 2)))) / (exp(y) + sqrt(sin(x))));
-
-}
